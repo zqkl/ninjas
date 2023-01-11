@@ -19,6 +19,29 @@ class Ninja {
     }
 }
 
+class Sensei extends Ninja{
+    constructor(name){
+        super(name,200);
+        this.speed = 10;
+        this.strength = 10;
+        this.wisdom = 10;
+    }
+
+    speakWisdom(){
+        this.drinkSake();
+        console.log(`${this.name} Says man cannot remake himself without suffering for he is both the marble and sculptor.`)
+    }
+}
+
+const oldman = new Sensei("Jacobian")
+oldman.sayName();
+oldman.showStats();
+oldman.speakWisdom();
+oldman.showStats();
+
+
+
+
 
 const ninja1 = new Ninja("Carson",100);
 ninja1.sayName();
